@@ -1,0 +1,282 @@
+  <style>
+	 /*
+	   Bistro in A Box
+	   Filename: index.css
+
+	   Author:   Brandi Wilson
+	   Date:     9/23/2020
+	   HTML5 and CSS3 Illustrated, Independent Project
+	 */
+
+	/* reset styles */
+		article, body, div, footer, header, h1, h2, h3 p {
+		  border: 0;
+		  padding: 0;
+		  margin: 0;
+		  font-family: "Times New Roman", Times, serif;
+		}
+	/* print styles */
+		@media print {
+		  body, h2, article {
+		    color: #000;
+		    background-color: #fff;
+		  }
+		  @body {
+		    max-width: 100%;
+		  }
+		}
+		@page {
+		  margin: 1in;
+		}
+		@media screen and (min-width: 600px) {
+		  body {
+		    background-color: #e40000s;
+		  }
+	/* Add a black background color to the top navigation */
+	.topnav {
+	  background-color: green;
+	  overflow: hidden;
+	}
+	
+	/* Style the links inside the navigation bar */
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	
+	/* Change the color of links on hover */
+	.topnav a:hover {
+	  background-color: lightgrey;
+	  color: black;
+	}
+	
+	/* Add an active class to highlight the current page */
+	.topnav a.active {
+	  background-color: #e40000;
+	  color: white;
+	}
+	
+	/* Hide the link that should open and close the topnav on small screens */
+	.topnav .icon {
+	  display: none;
+	}
+	/* body and page container*/
+		.container {
+		  background-color: #e40000;
+		  text-align: center;
+		  max-width: 640px;
+		  margin: 0 auto;
+		  position: relative;
+		  top: 0em;
+		}
+
+	/* headings */
+		header {
+		  width: 100%;
+		  max-width: 640px;
+		  position: relative;
+		  text-align: center;
+		  background-color: green;
+		  top: 0em;
+		}
+		h1 {
+		  font-style: italic;
+		  top: .9em;
+                  position: relative;
+                  font-size: 36px;
+		}
+		header div {
+		  color: white;
+		  width: 70%;
+		  margin: 0 auto 0.6em;
+		}
+		header p {
+		  color: white;
+		  padding: 6px;
+		}
+		header p.phone {
+		  color: white;
+		  padding: 6px;
+		  width: 100%;
+		}
+		.established {
+		  width: 25%;
+		  float: left;
+		}
+		.award {
+		  width: 25%;
+		  float: right;
+		}
+		.options {
+		  width: 25%;
+		  margin: 0 auto;
+		  position: relative;
+		  top: 1.15em;
+		}
+		.pointright {
+		  background-color: transparent;
+		  color: lightgreen;
+		  position: absolute;
+		  top: 0.4em;
+		  left: 0.4em;
+		  font-size: 25px;
+		  text-shadow: 0.2em 0.2em 0.2em lightgrey;
+		}
+		.pointleft {
+		  background-color: transparent;
+		  color: lightgreen;
+		  position: absolute;
+		  top: 0.4em;
+		  right: 0.4em;
+		  font-size: 25px;
+		  text-shadow: 0.2em 0.2em 0.2em lightgrey;
+		}
+		.creation {
+		  border: 2px solid green;
+		  width: 60%;
+		  margin: 0 auto;
+		  position: relative;
+		  top: 1.50 em;
+		  right: 0em;
+		  animation: its2007alloveragain 1.5s linear infinite;
+		  background: linear-gradient;
+		  background-size: 1000% 100%;
+                  display: inline-block;
+		}
+		p.logo {
+		  padding: 0.2em;
+		  border: 2px solid red;
+		  color: green;
+		  position: absolute;
+		  top: 2em;
+		  left: 2em;
+	        }
+
+	/* site navigation bar */
+	nav.sitenavigation {
+	/*   width: 19%; */
+	/*   padding: 3%; */
+	/*   float: left; */
+	   color: white;
+	   text-align: center;
+	   background-color: #734b3d;
+	}
+	nav.sitenavigation p {
+	   display: inline-block;
+	   margin: 0.5em;
+	}
+	nav.sitenavigation a:link {
+	   text-decoration: none;
+	   color: black;
+	}
+	nav.sitenavigation a:visited {
+	   color: black;
+	}
+	nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+	   color: black;
+	}
+	ul {
+	   list-style-type: none;
+	   margin: 0;
+	   padding:0;
+	}
+	.triangle-right {
+		width: 0;
+		height: 0;
+		border-top: 25px solid transparent;
+		border-left: 50px solid #555;
+		border-bottom: 25px solid transparent;
+}
+
+	/* main content */
+		article {
+		  color: black;
+		  background-color: white;
+		  text-align: left;
+		  width: 65%;
+		  margin: 0 auto;
+		  padding: 1em 1em 1em;
+		  position: relative;
+		}
+		h2 {
+		  clear: left;
+		  color: black;
+		  margin: 0 0.2em;
+		  font-size: 40px;
+		}
+		h3 {
+		  color: green;
+		  margin: 1em 0 0.4em;
+		}
+		.menu {
+		  margin: 0 0 0.5em;
+		}
+		.myo {
+		  margin-left: 1em;
+		}
+		.list {
+		  margin: 0 0 0 2em;
+		}
+		table, th, td {
+		  border: 1px solid black;
+		}
+		div.a {
+		  width: 150px;
+		  height: 80px;
+		  background-color: transparent;
+		  color: brown;
+		  -ms-transform: rotate(22deg); /* IE 9 */
+		  transform: rotate(22deg);
+}
+
+	/* sidebar */
+		aside {
+		  width: 20%;
+		  padding: 0 0.50em 0;
+		  background-color: lightgreen;
+		  position: absolute;
+		  right: 0em;
+		aside p {
+		  border-bottom: 1px solid green;
+		  border-top: 1px solid darkgrey;
+		  padding: 0.9em 0;
+		  margin: 0 0.6em;
+		 }
+
+	/* footer section */
+		footer {
+		  background-color: white;
+		  color: black;
+		  border: 3px solid black;
+		  padding: 0.5em;
+		}
+	/*small screen/tablet styles*/
+	@media screen and (min-width: 460px), print {
+	  article {
+	    padding: 2%;
+	  }
+	}
+	/*standard screen styles*/
+	@media screen and (min-width: 880px) {
+	  h3 {
+	    float: right;
+	  }
+	}
+	/*large screen styles*/
+	@media screen and (min-width: 1060px) {
+	  figure {
+	    margin: 2%;
+	  }
+	}
+	/*maximum width screen styles*/
+	@media screen and (min-width: 1400px) {
+	  article div {
+	    width: 1260px;
+	  }
+	}
+ </style>

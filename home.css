@@ -1,0 +1,103 @@
+ <style>
+	 /*
+	   Bistro in A Box
+	   Filename: home.css
+
+	   Author:   Brandi Wilson
+	   Date:     11/24/2020
+	   HTML5 and CSS3 Illustrated, Independent Project
+	 */
+
+	/* reset styles */
+		article, body, div, footer, header, h1, h2, h3, p, video {
+		  border: 0;
+		  padding: 0;
+		  margin: 0;
+		  font-family: "Times New Roman", Times, serif;
+		}
+		html {
+		font-size: 16px;
+		}
+		img, video {
+		  max-width: 100%;
+		  height: auto;
+		  width: auto;
+		}
+	/* print styles */
+		@media print {
+		  body, h2, article {
+		    color: #000;
+		    background-color: #fff;
+		  }
+		  @body {
+		    max-width: 100%;
+		  }
+		}
+		@page {
+		  margin: 1in;
+		}
+		@media screen and (min-width: 600px) {
+		  body {
+		    background-color: #e40000s;
+		  }animation: mymove 5s infinite;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  
+}
+#div1 {transition-timing-function: ease-out;}
+div:hover {
+  width: 300px;
+}
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+var vid = document.getElementById("myVideo");
+
+function getPlaySpeed() { 
+  alert(vid.playbackRate);
+} 
+
+function setPlaySpeed() { 
+  vid.playbackRate = 0.5;
+} 
+function myFunction() {
+  var x = document.getElementById("mySource").src;
+  document.getElementById("demo").innerHTML = x;
+}
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , green);
+}
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "What are your taste buds saying today?";
+  document.getElementById("demo2").innerHTML = "A bistro box!!!! we were thinking the same thing.";
+}
+var Box1 = 15;
+var Box3 = 16;
+var total = Box1 + Box3;
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+
+function myFunction(b1, b2) {
+  return b1 * b2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+document.getElementById("p2").style.color = "Red";
+document.getElementById("p2").style.fontFamily = "Times New Roman";
+document.getElementById("p2").style.fontSize = "larger";
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
